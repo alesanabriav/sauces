@@ -7,7 +7,6 @@ class HeaderLink extends Component {
 	}
 
 	toggleSubnav = () => {
-		console.log('toggle');
 		this.setState({ showSubnav: !this.state.showSubnav });
 	}
 
@@ -32,7 +31,9 @@ class HeaderLink extends Component {
 								<span className="subnav-title">{sublink.title}</span>
 								{links.hasOwnProperty(sublink.ID) && 
 									<ul>
-									{links[sublink.ID].map(l => <li key={l.ID}><a href={l.url}>{l.title}</a></li>)}
+										{links[sublink.ID].map(l => 
+											<li key={l.ID}><a href={l.url}>{l.title}</a></li>
+										)}
 									</ul>
 								}
 							</section>
@@ -52,8 +53,12 @@ class HeaderLink extends Component {
 						align-items: center;
 					}
 
-					.header__nav li a:hover {
+					.header__nav_link a:hover {
 						text-decoration: none;
+					}
+
+					.header__nav_link:first-child  > a{
+						padding-left: 0;
 					}
 
 					.header__nav_subnav {
@@ -61,12 +66,19 @@ class HeaderLink extends Component {
     				position: absolute;
     				left: 0;
 						padding: 60px 0;
-						background: rgba(230, 70, 51, .9);
+						background: rgba(230, 70, 51, 0.9);
 						opacity: 0;
 						pointer-events: none;
 						transition: opacity .15s;
 						display: flex;
 						justify-content: space-around;
+						text-align: center;
+						
+					}
+
+					.header__nav_subnav ul li a {
+						color: #fff;
+						font-weight: 500;
 					}
 
 					.header__nav_subnav--open {

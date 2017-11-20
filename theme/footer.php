@@ -1,3 +1,20 @@
+<section class="footer">
+  <div class="container">
+  <?php dynamic_sidebar( 'footer' ); ?>
+  </div>
+</section>
+<style>
+.footer {
+  text-align: center;
+	background: #E64633;
+	padding: 50px 0;
+	font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+	color: #fff;
+	width: 100%;
+}
+</style>
 
 <!--wordpress files-->
 <?php wp_footer() ?>

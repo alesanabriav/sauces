@@ -9,13 +9,16 @@ class HeaderNav extends Component {
 			<ul className="header__nav">
 			{links[0].map(link => {
 				if(link.title === 'logo') {
-						return <li key={link.ID} className="header__nav_logo">
+					return (
+						<li key={link.ID} className="header__nav_logo">
 							<a href={link.url}><img src={`${templateUri}/public/img/logo@2x.png`} /></a>
 						</li>
-					}
+					)
+				}
 
 				return <HeaderLink key={link.ID} links={links} link={link} />
 			})}
+			
 			<style jsx>{`
 				.header__nav {
 					display: none;	

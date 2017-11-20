@@ -19,6 +19,7 @@
     body {
       font-family: 'PT Sans', sans-serif;
       background: url('<?php echo get_template_directory_uri() ?>/public/img/wood_bg.png');
+      font-size: 14px;
       background-size: cover;
       -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,6 +31,10 @@
 
     li {
       list-style: none;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
   </style>
 
