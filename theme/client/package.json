@@ -1,0 +1,28 @@
+{
+  "name": "sauces",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/developersoul/sauces/",
+  "author": "Alejandro Sanabria <alesanabriav@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --p",
+    "build:dev": "webpack --watch"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "styled-jsx": "^2.2.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-multiple-render": "^1.1.4"
+  }
+}

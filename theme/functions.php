@@ -5,7 +5,7 @@ En ajax van todas las funciones que manejan el ajax enviado desde el front.
 Documentación:
 https://codex.wordpress.org/Plugin_API/Action_Reference/wp_ajax_(action)
 */
-require 'ajax/index.php';
+require 'api/index.php';
 
 /*
 en lib va todas las librerias que necesitamos crear.
@@ -25,3 +25,12 @@ Documentación:
 https://codex.wordpress.org/Creating_Options_Pages
 */
 require 'shortcodes/index.php';
+
+
+register_nav_menus(
+  array(
+    'header' => 'Header nav',
+    'mobile' => 'Mobile nav'
+  )
+);
+
