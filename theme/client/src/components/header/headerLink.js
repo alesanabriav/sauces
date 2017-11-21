@@ -73,17 +73,18 @@ class HeaderLink extends Component {
 						display: flex;
 						justify-content: space-around;
 						text-align: center;
+						z-index: 91;
 						
-					}
-
-					.header__nav_subnav ul li a {
-						color: #fff;
-						font-weight: 500;
 					}
 
 					.header__nav_subnav--open {
 						opacity: 1;
 						pointer-events: all;
+					}
+
+					.header__nav_subnav ul li a {
+						color: #fff;
+						font-weight: 500;
 					}
 
 					.subnav-title {

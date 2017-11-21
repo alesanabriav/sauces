@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width,initial-scale=1" name=viewport>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><?php echo bloginfo('title'); ?></title>
   <!-- Latest compiled and minified CSS -->
@@ -18,11 +18,21 @@
   <style>
     body {
       font-family: 'PT Sans', sans-serif;
-      background: url('<?php echo get_template_directory_uri() ?>/public/img/wood_bg.png');
+      background: url('<?php echo get_template_directory_uri() ?>/public/img/wood_bg@2x.png');
       font-size: 14px;
-      background-size: cover;
+      background-size: contain;
       -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+      margin-bottom: 0!important;
+    }
+
+    .section-content {
+      background: rgba(255, 255, 255, 0.4);
+      border-left: 1px solid #000;
+      padding: 60px;
     }
     
     ul {

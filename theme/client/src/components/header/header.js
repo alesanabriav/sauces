@@ -7,10 +7,6 @@ class Header extends Component {
 
 	render() {
 		const { menu } = this.props;
-		menu.reduce((arr, link) => {
-
-		}, []);
-
 		const links = _.groupBy(menu, 'menu_item_parent');
 
 		return (
@@ -26,6 +22,8 @@ class Header extends Component {
 						display: flex;
 						align-items: center;
 						justify-content: flex-end;
+						position: relative;
+						z-index: 90;
 					}
 
 					.header-logo {
@@ -34,6 +32,7 @@ class Header extends Component {
 						left: 0;
 						right: 0;
 						margin: auto;
+						z-index: 92;
 					}
 
 					.header-navicon {
