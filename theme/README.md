@@ -1,4 +1,4 @@
-## BS Theme
+# Developersoul theme starter
 Tema base para empezar.
 
 ### Como organizar los archivos
