@@ -1,0 +1,17 @@
+/*
+Theme Name: Sauces Theme
+Theme URI: https://github.com/developersoul/sauces
+Author: Alejandro Sanabria <alesanabriav@gmail.com>
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.slick-dots li button:before {
+	font-size: 12px;
+	color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #fff;
+	opacity: 1;
+}
